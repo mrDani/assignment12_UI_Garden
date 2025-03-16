@@ -1,5 +1,7 @@
 # UI Garden Component Library
 
+A React + TypeScript UI Component Library with Storybook, including automated code quality checks (ESLint, Prettier, Tests) using Husky and GitHub Actions.
+
 This is a React Component Library built with Storybook. It includes the following components:
 
 - Button
@@ -43,16 +45,12 @@ Clone the repository and navigate into the project directory:
 git clone <repository-url>
 cd ui-garden
 
+npm install
+
+# Ensure TypeScript & ESLint checks pass
+npm run lint
+
+# Run Jest tests
+npm run test
 
 npm run storybook
-
-
-# UI Garden Component Library with Build Checks
-
-## 🚀 Description
-A React + TypeScript UI Component Library with Storybook, including automated code quality checks (ESLint, Prettier, Tests) using Husky and GitHub Actions.
-
-## 🛠 Installation
-```bash
-npm install
-````

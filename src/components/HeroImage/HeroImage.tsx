@@ -1,4 +1,3 @@
-
 import styled from 'styled-components';
 import { HeroImageProps } from './HeroImage.types';
 
@@ -24,4 +23,3 @@ const HeroImage: React.FC<HeroImageProps> = ({
 );
 
 export default HeroImage;
-

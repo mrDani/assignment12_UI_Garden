@@ -13,6 +13,7 @@ This is a React Component Library built with Storybook. It includes the followin
 - Card
 
 Each component is:
+
 - Responsive
 - Styled using StyledComponents
 - Equipped with Default and Disabled states
@@ -38,7 +39,7 @@ Each component is:
 
 Clone the repository and navigate into the project directory:
 
-```bash
+````bash
 git clone <repository-url>
 cd ui-garden
 
@@ -54,3 +55,4 @@ A React + TypeScript UI Component Library with Storybook, including automated co
 ## 🛠 Installation
 ```bash
 npm install
+````

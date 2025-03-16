@@ -30,7 +30,8 @@
     "build-storybook": "storybook build",
     "format": "prettier --write .",
     "prepare": "husky",
-    "lint": "eslint './src/**/*.{ts,tsx}'"
+    "lint": "eslint './src/**/*.{ts,tsx}'",
+    "prettier": "prettier --write ."
   },
   "eslintConfig": {
     "extends": [

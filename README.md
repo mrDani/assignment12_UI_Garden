@@ -54,3 +54,23 @@ npm run lint
 npm run test
 
 npm run storybook
+
+# To Run this Application for Docker: 
+
+npm run build-storybook
+
+docker build -t babalola_daniel_coding_assignment13 .
+
+docker run -d -p 8018:80 --name babalola_daniel_coding_assignment13 babalola_daniel_coding_assignment13
+
+# Open your browser at: 
+
+http://localhost:8018
+
+
+docker stop babalola_daniel_coding_assignment13
+
+docker rm babalola_daniel_coding_assignment13
+
+docker rmi babalola_daniel_coding_assignment13
+

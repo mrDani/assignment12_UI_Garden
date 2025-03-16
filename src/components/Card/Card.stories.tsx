@@ -1,4 +1,3 @@
-import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import Card from './Card';
 
@@ -19,7 +18,8 @@ type Story = StoryObj<typeof Card>;
 
 export const Default: Story = {
   args: {
-    imageSrc: 'https://cdn.pixabay.com/photo/2024/12/31/10/52/salamanca-9302112_1280.jpg',
+    imageSrc:
+      'https://cdn.pixabay.com/photo/2024/12/31/10/52/salamanca-9302112_1280.jpg',
     title: 'Card Title',
     description: 'This is a description of the card.',
     buttonLabel: 'Learn More',
@@ -45,7 +45,8 @@ export const NoImage: Story = {
 
 export const Disabled: Story = {
   args: {
-    imageSrc: 'https://cdn.pixabay.com/photo/2024/12/31/10/52/salamanca-9302112_1280.jpg',
+    imageSrc:
+      'https://cdn.pixabay.com/photo/2024/12/31/10/52/salamanca-9302112_1280.jpg',
     title: 'Card Title',
     description: 'This is a description of the card.',
     buttonLabel: 'Learn More',

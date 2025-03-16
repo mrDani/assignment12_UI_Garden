@@ -1,4 +1,3 @@
-import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import Table from './Table';
 
@@ -10,7 +9,7 @@ const meta: Meta<typeof Table> = {
     rows: { control: 'object' },
     footer: { control: 'text' },
     disabled: { control: 'boolean' },
-  },  
+  },
 };
 export default meta;
 

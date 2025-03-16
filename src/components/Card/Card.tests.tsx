@@ -28,7 +28,9 @@ describe('Card Component', () => {
         disabled
       />
     );
-    expect(screen.getByText('Disabled Card').closest('div')).toHaveStyle('opacity: 0.6');
+    expect(screen.getByText('Disabled Card').closest('div')).toHaveStyle(
+      'opacity: 0.6'
+    );
   });
 
   test('should trigger button click', () => {

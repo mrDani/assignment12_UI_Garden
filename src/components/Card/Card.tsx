@@ -2,7 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import { CardProps } from './Card.types';
 
-const CardContainer = styled.div<Omit<CardProps, 'title' | 'description' | 'buttonLabel' | 'onButtonClick' | 'imageSrc'>>`
+const CardContainer = styled.div<
+  Omit<
+    CardProps,
+    'title' | 'description' | 'buttonLabel' | 'onButtonClick' | 'imageSrc'
+  >
+>`
   width: 300px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -49,7 +54,14 @@ const CardButton = styled.button<{ disabled?: boolean }>`
   }
 `;
 
-const Card: React.FC<CardProps> = ({ imageSrc, title, description, buttonLabel, onButtonClick, disabled }) => {
+const Card: React.FC<CardProps> = ({
+  imageSrc,
+  title,
+  description,
+  buttonLabel,
+  onButtonClick,
+  disabled,
+}) => {
   return (
     <CardContainer disabled={disabled}>
       {imageSrc && <CardImage src={imageSrc} alt={title} />}

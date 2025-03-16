@@ -20,7 +20,11 @@ const StyledText = styled.p<Omit<TextProps, 'content'>>`
 `;
 
 const Text: React.FC<TextProps> = ({ content, color, size, disabled }) => {
-  return <StyledText color={color} size={size} disabled={disabled}>{content}</StyledText>;
+  return (
+    <StyledText color={color} size={size} disabled={disabled}>
+      {content}
+    </StyledText>
+  );
 };
 
 export default Text;

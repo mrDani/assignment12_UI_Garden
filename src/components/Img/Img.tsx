@@ -13,7 +13,15 @@ const StyledImg = styled.img<Omit<ImgProps, 'src' | 'alt'>>`
 `;
 
 const Img: React.FC<ImgProps> = ({ src, alt, width, height, disabled }) => {
-  return <StyledImg src={src} alt={alt} width={width} height={height} disabled={disabled} />;
+  return (
+    <StyledImg
+      src={src}
+      alt={alt}
+      width={width}
+      height={height}
+      disabled={disabled}
+    />
+  );
 };
 
 export default Img;

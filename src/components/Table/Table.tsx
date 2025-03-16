@@ -2,14 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 import { TableProps } from './Table.types';
 
-const StyledTable = styled.table<Omit<TableProps, 'headers' | 'rows' | 'footer'>>`
+const StyledTable = styled.table<
+  Omit<TableProps, 'headers' | 'rows' | 'footer'>
+>`
   width: 100%;
   border-collapse: collapse;
   cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'default')};
   opacity: ${({ disabled }) => (disabled ? 0.6 : 1)};
   transition: opacity 0.3s ease;
 
-  th, td {
+  th,
+  td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;

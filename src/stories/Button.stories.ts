@@ -55,8 +55,8 @@ export const Small: Story = {
 export const FrankCastle: Story = {
   args: {
     primary: true,
-    label: "Can You Check This Out",
-    backgroundColor: "#878aed",
-    size: "large"
-  }
+    label: 'Can You Check This Out',
+    backgroundColor: '#878aed',
+    size: 'large',
+  },
 };

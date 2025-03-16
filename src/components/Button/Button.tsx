@@ -23,4 +23,5 @@ const Button: React.FC<ButtonProps> = ({ text, onClick, disabled }) => (
   </StyledButton>
 );
 
+
 export default Button;

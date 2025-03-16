@@ -11,9 +11,18 @@ const StyledSelect = styled.select<Omit<DropdownProps, 'options' | 'onChange'>>`
   transition: opacity 0.3s ease;
 `;
 
-const Dropdown: React.FC<DropdownProps> = ({ options, selected, onChange, disabled }) => {
+const Dropdown: React.FC<DropdownProps> = ({
+  options,
+  selected,
+  onChange,
+  disabled,
+}) => {
   return (
-    <StyledSelect value={selected} onChange={(e) => onChange(e.target.value)} disabled={disabled}>
+    <StyledSelect
+      value={selected}
+      onChange={(e) => onChange(e.target.value)}
+      disabled={disabled}
+    >
       {options.map((option, index) => (
         <option key={index} value={option}>
           {option}

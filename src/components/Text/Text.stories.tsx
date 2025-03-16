@@ -1,4 +1,3 @@
-import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import Text from './Text';
 
@@ -8,9 +7,9 @@ const meta: Meta<typeof Text> = {
   argTypes: {
     content: { control: 'text' },
     color: { control: 'color' },
-    size: { 
+    size: {
       control: 'select',
-      options: ['small', 'medium', 'large']
+      options: ['small', 'medium', 'large'],
     },
     disabled: { control: 'boolean' },
   },

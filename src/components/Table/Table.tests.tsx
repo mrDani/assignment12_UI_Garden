@@ -11,6 +11,8 @@ describe('Table Component', () => {
 
   test('should change opacity when disabled', () => {
     render(<Table headers={['Name']} rows={[['Alice']]} disabled />);
-    expect(screen.getByText('Alice').closest('table')).toHaveStyle('opacity: 0.6');
+    expect(screen.getByText('Alice').closest('table')).toHaveStyle(
+      'opacity: 0.6'
+    );
   });
 });

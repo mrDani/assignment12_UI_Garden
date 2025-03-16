@@ -27,7 +27,7 @@ Each component is:
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -41,3 +41,16 @@ Clone the repository and navigate into the project directory:
 ```bash
 git clone <repository-url>
 cd ui-garden
+
+
+npm run storybook
+
+
+# UI Garden Component Library with Build Checks
+
+## 🚀 Description
+A React + TypeScript UI Component Library with Storybook, including automated code quality checks (ESLint, Prettier, Tests) using Husky and GitHub Actions.
+
+## 🛠 Installation
+```bash
+npm install

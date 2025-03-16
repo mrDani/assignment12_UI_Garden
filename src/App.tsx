@@ -22,7 +22,7 @@ function App() {
   return (
     <AppContainer>
       <h1>UI Garden Component Library</h1>
-      
+
       <h2>Button</h2>
       <Button text="Click Me" onClick={() => alert('Button Clicked!')} />
       <Button text="Disabled Button" onClick={() => {}} disabled />
@@ -72,8 +72,19 @@ function App() {
       />
 
       <h2>Image</h2>
-      <Img src="https://via.placeholder.com/300" alt="Placeholder Image" width="300px" height="200px" />
-      <Img src="https://via.placeholder.com/300" alt="Disabled Image" width="300px" height="200px" disabled />
+      <Img
+        src="https://via.placeholder.com/300"
+        alt="Placeholder Image"
+        width="300px"
+        height="200px"
+      />
+      <Img
+        src="https://via.placeholder.com/300"
+        alt="Disabled Image"
+        width="300px"
+        height="200px"
+        disabled
+      />
 
       <h2>Hero Image</h2>
       <HeroImage

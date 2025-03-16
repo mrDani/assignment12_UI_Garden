@@ -11,7 +11,11 @@ const StyledLabel = styled.span<Omit<LabelProps, 'text'>>`
 `;
 
 const Label: React.FC<LabelProps> = ({ text, color, disabled }) => {
-  return <StyledLabel color={color} disabled={disabled}>{text}</StyledLabel>;
+  return (
+    <StyledLabel color={color} disabled={disabled}>
+      {text}
+    </StyledLabel>
+  );
 };
 
 export default Label;

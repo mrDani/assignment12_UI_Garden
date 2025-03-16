@@ -1,7 +1,6 @@
 export interface TableProps {
-    headers: string[];
-    rows: string[][];
-    footer?: string;
-    disabled?: boolean;
-  }
-  
+  headers: string[];
+  rows: string[][];
+  footer?: string;
+  disabled?: boolean;
+}

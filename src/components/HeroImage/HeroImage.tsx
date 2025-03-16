@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { HeroImageProps } from './HeroImage.types'; 
+import { HeroImageProps } from './HeroImage.types';
 
 const HeroContainer = styled.div<{ $imageSrc: string }>`
   background-image: url(${({ $imageSrc }) => $imageSrc});

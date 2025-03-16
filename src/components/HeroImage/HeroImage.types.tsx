@@ -1,6 +1,6 @@
 export interface HeroImageProps {
-  backgroundImage: string;
+  imageSrc: string;
   title: string;
-  subtitle?: string;
+  description: string;
   disabled?: boolean;
 }

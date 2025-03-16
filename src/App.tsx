@@ -88,14 +88,15 @@ function App() {
 
       <h2>Hero Image</h2>
       <HeroImage
-        backgroundImage="https://via.placeholder.com/1200x300"
+        imageSrc="https://via.placeholder.com/1200x300"
         title="Hero Title"
-        subtitle="This is the hero subtitle"
+        description="This is the hero subtitle"
       />
+
       <HeroImage
-        backgroundImage="https://via.placeholder.com/1200x300"
+        imageSrc="https://via.placeholder.com/1200x300"
         title="Disabled Hero"
-        subtitle="This is a disabled hero"
+        description="This is a disabled hero"
         disabled
       />
 

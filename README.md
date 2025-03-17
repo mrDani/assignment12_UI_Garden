@@ -50,7 +50,7 @@ npm install
 # Ensure TypeScript & ESLint checks pass
 npm run lint
 
-# Run Jest tests
+# Run Jest test.......
 npm run test
 
 npm run storybook

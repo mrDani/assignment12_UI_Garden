@@ -2,20 +2,20 @@ import React from 'react';
 import styled from 'styled-components';
 import { CardProps } from './Card.types';
 
-const CardContainer = styled.div<
-  Omit<
-    CardProps,
-    'title' | 'description' | 'buttonLabel' | 'onButtonClick' | 'imageSrc'
-  >
->`
+const CardContainer = styled.div`
   width: 300px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  background: white;
-  cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
-  opacity: ${({ disabled }) => (disabled ? 0.6 : 1)};
-  transition: opacity 0.3s ease;
+  background: #1e3d59;
+  cursor: pointer;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 `;
 
 const CardImage = styled.img`
@@ -26,31 +26,34 @@ const CardImage = styled.img`
 
 const CardContent = styled.div`
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 `;
 
 const CardTitle = styled.h3`
-  font-size: 20px;
-  margin: 0;
-  color: #333;
+  font-size: 1.5rem;
+  color: #00bfff;
+  margin: 0 0 10px;
 `;
 
 const CardDescription = styled.p`
-  font-size: 14px;
-  color: #777;
-  margin: 10px 0;
+  font-size: 1rem;
+  color: #ddd;
+  flex-grow: 1;
 `;
 
-const CardButton = styled.button<{ disabled?: boolean }>`
-  background-color: ${({ disabled }) => (disabled ? '#ccc' : '#ff69b4')};
+const CardButton = styled.button`
+  background-color: #00bfff;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 15px;
   border-radius: 5px;
-  cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
-  transition: background-color 0.3s ease;
+  cursor: pointer;
+  transition: background-color 0.3s;
 
   &:hover {
-    background-color: ${({ disabled }) => (disabled ? '#ccc' : '#ff1493')};
+    background-color: #1e90ff;
   }
 `;
 
@@ -60,17 +63,14 @@ const Card: React.FC<CardProps> = ({
   description,
   buttonLabel,
   onButtonClick,
-  disabled,
 }) => {
   return (
-    <CardContainer disabled={disabled}>
+    <CardContainer onClick={onButtonClick}>
       {imageSrc && <CardImage src={imageSrc} alt={title} />}
       <CardContent>
         <CardTitle>{title}</CardTitle>
         <CardDescription>{description}</CardDescription>
-        <CardButton onClick={onButtonClick} disabled={disabled}>
-          {buttonLabel}
-        </CardButton>
+        <CardButton>{buttonLabel}</CardButton>
       </CardContent>
     </CardContainer>
   );

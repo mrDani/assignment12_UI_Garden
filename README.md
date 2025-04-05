@@ -1,3 +1,17 @@
+
+# Daniel Babalola Portfolio Site
+
+This is a React portfolio website showcasing my coursework and projects, built using my existing UI component library.
+
+## 📚 Sections
+- Basic Information
+- Work
+- Skills
+- Resources
+- Developer Setup
+
+## Getting Started
+1. Install dependencies:
 # UI Garden Component Library
 
 A React + TypeScript UI Component Library with Storybook, including automated code quality checks (ESLint, Prettier, Tests) using Husky and GitHub Actions.

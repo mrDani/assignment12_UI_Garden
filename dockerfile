@@ -1,14 +1,13 @@
-
-# Stage 1: Build Storybook
+# Stage 1: Build the application
 FROM node:18-alpine AS builder
-WORKDIR /babalola_daniel_ui_garden_build_checks
+WORKDIR /babalola_daniel_final_site
 COPY package*.json ./
 RUN npm install
 COPY . .
-RUN npm run build-storybook
+RUN npm run build
 
-# Stage 2: Serve using Nginx
+# Stage 2: Serve the application
 FROM nginx:alpine
-COPY --from=builder /babalola_daniel_ui_garden_build_checks/storybook-static /usr/share/nginx/html
-EXPOSE 8018
+COPY --from=builder /babalola_daniel_final_site/build /usr/share/nginx/html
+EXPOSE 5575
 CMD ["nginx", "-g", "daemon off;"]

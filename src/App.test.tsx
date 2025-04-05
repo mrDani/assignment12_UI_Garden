@@ -3,8 +3,10 @@ import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import App from './App';
 
-test('renders UI Garden Component Library heading', () => {
+test('renders the navbar', () => {
   render(<App />);
-  const headingElement = screen.getByText(/UI Garden Component Library/i);
-  expect(headingElement).toBeInTheDocument();
+
+  const navbarElements = screen.getAllByText(/Daniel/i);
+  
+  expect(navbarElements[0]).toBeInTheDocument();
 });

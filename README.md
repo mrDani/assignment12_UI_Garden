@@ -14,9 +14,7 @@ This is a React portfolio website showcasing my coursework and projects, built u
 1. Install dependencies:
 # UI Garden Component Library
 
-A React + TypeScript UI Component Library with Storybook, including automated code quality checks (ESLint, Prettier, Tests) using Husky and GitHub Actions.
-
-This is a React Component Library built with Storybook. It includes the following components:
+It is also a React Component Library built with Storybook. It includes the following components:
 
 - Button
 - Label
@@ -35,7 +33,7 @@ Each component is:
 - Equipped with Default and Disabled states
 - Fully interactive with Storybook Controls
 
-## 📚 Features
+## Features
 
 - Interactive Storybook UI for live preview and control of each component's props
 - Built with React, TypeScript, and StyledComponents
@@ -71,20 +69,24 @@ npm run storybook
 
 # To Run this Application for Docker: 
 
+npm start 
+
+# To run storybook 
 npm run build-storybook
 
-docker build -t babalola_daniel_coding_assignment13 .
+docker build -t babalola_daniel_coding_assignment14 .
 
-docker run -d -p 8018:80 --name babalola_daniel_coding_assignment13 babalola_daniel_coding_assignment13
+docker run -d -p 5575:80 --name babalola_daniel_coding_assignment14 babalola_daniel_coding_assignment14
+
 
 # Open your browser at: 
 
-http://localhost:8018
+http://localhost:5575
 
 
-docker stop babalola_daniel_coding_assignment13
+docker stop babalola_daniel_coding_assignment14
 
-docker rm babalola_daniel_coding_assignment13
+docker rm babalola_daniel_coding_assignment14
 
-docker rmi babalola_daniel_coding_assignment13
+docker rmi babalola_daniel_coding_assignment14
 

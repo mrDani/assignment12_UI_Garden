@@ -54,7 +54,7 @@ Each component is:
 Clone the repository and navigate into the project directory:
 
 ````bash
-git clone <repository-url>
+git clone https://github.com/mrDani/assignment12_UI_Garden
 cd ui-garden
 
 npm install

@@ -14,8 +14,10 @@ const projects = [
   {
     id: 1,
     title: 'Pianocella (Ecommerce App)',
-    description: 'Ecommerce platform built with Ruby on Rails, React, and Stripe integration.',
-    imageSrc: 'https://cdn.pixabay.com/photo/2024/12/31/10/52/salamanca-9302112_1280.jpg',
+    description:
+      'Ecommerce platform built with Ruby on Rails, React, and Stripe integration.',
+    imageSrc:
+      'https://cdn.pixabay.com/photo/2024/12/31/10/52/salamanca-9302112_1280.jpg',
     link: 'https://github.com/mrDani/Pianocella_Ecommerce',
     tech: ['Ruby on Rails', 'React', 'Stripe'],
   },
@@ -23,15 +25,18 @@ const projects = [
     id: 2,
     title: 'Nilema App',
     description: 'A versatile application providing useful functionalities.',
-    imageSrc: 'https://cdn.pixabay.com/photo/2022/05/28/22/44/multi-storey-parking-garage-7228120_1280.jpg',
+    imageSrc:
+      'https://cdn.pixabay.com/photo/2022/05/28/22/44/multi-storey-parking-garage-7228120_1280.jpg',
     link: 'https://github.com/mrDani/NilemaApp',
     tech: ['React', 'TypeScript', 'StyledComponents'],
   },
   {
     id: 3,
     title: 'Bookstore App',
-    description: 'An interactive Bookstore application built with Ruby on Rails and Open Library API.',
-    imageSrc: 'https://cdn.pixabay.com/photo/2024/12/31/10/52/salamanca-9302112_1280.jpg',
+    description:
+      'An interactive Bookstore application built with Ruby on Rails and Open Library API.',
+    imageSrc:
+      'https://cdn.pixabay.com/photo/2024/12/31/10/52/salamanca-9302112_1280.jpg',
     link: 'https://github.com/mrDani/BookLibraryAPI',
     tech: ['Ruby on Rails', 'API Integration', 'Bootstrap'],
   },
@@ -39,7 +44,8 @@ const projects = [
     id: 4,
     title: 'GigsHub',
     description: 'A PHP-based application for managing events and gigs.',
-    imageSrc: 'https://cdn.pixabay.com/photo/2016/08/09/12/20/sunset-1580493_1280.jpg',
+    imageSrc:
+      'https://cdn.pixabay.com/photo/2016/08/09/12/20/sunset-1580493_1280.jpg',
     link: 'https://github.com/mrDani/Gigshub',
     tech: ['PHP', 'MySQL', 'Laravel'],
   },

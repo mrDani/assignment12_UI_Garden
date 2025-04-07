@@ -18,11 +18,14 @@ const Stars = styled.div`
 
 const AnimatedBackground: React.FC = () => {
   const starElements = Array.from({ length: 100 }, (_, index) => (
-    <Stars key={index} style={{
-      top: `${Math.random() * 100}vh`,
-      left: `${Math.random() * 100}vw`,
-      animationDuration: `${Math.random() * 200 + 100}s`
-    }} />
+    <Stars
+      key={index}
+      style={{
+        top: `${Math.random() * 100}vh`,
+        left: `${Math.random() * 100}vw`,
+        animationDuration: `${Math.random() * 200 + 100}s`,
+      }}
+    />
   ));
 
   return <div className="stars">{starElements}</div>;

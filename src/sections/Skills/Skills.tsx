@@ -47,16 +47,40 @@ const Marquee = styled.div`
 `;
 
 const skills = [
-  'React', 'Ruby on Rails', 'JavaScript', 'PHP', 
-   'HTML', 'CSS', 'Python', 'Django',
-  'Java', 'Git', 'Docker', 'TypeScript', 
-   'Bootstrap', 'Debugging', 'MySQL',
+  'React',
+  'Ruby on Rails',
+  'JavaScript',
+  'PHP',
+  'HTML',
+  'CSS',
+  'Python',
+  'Django',
+  'Java',
+  'Git',
+  'Docker',
+  'TypeScript',
+  'Bootstrap',
+  'Debugging',
+  'MySQL',
 ];
 
 const marqueeSkills = [
-  'Python', 'Django', 'Java', 'Node.js', 'Express', 'Git', 'Docker', 
-  'Agile Development', 'RESTful APIs', 'Bootstrap', 'Laravel', 'Debugging',
-  'Unit Testing', 'React Testing Library', 'GitHub Actions', 'CI/CD Pipelines'
+  'Python',
+  'Django',
+  'Java',
+  'Node.js',
+  'Express',
+  'Git',
+  'Docker',
+  'Agile Development',
+  'RESTful APIs',
+  'Bootstrap',
+  'Laravel',
+  'Debugging',
+  'Unit Testing',
+  'React Testing Library',
+  'GitHub Actions',
+  'CI/CD Pipelines',
 ];
 
 const Skills: React.FC = () => (
@@ -68,9 +92,7 @@ const Skills: React.FC = () => (
       ))}
     </SkillsContainer>
     <MarqueeContainer>
-      <Marquee>
-        {marqueeSkills.join(' • ')}
-      </Marquee>
+      <Marquee>{marqueeSkills.join(' • ')}</Marquee>
     </MarqueeContainer>
   </SectionContainer>
 );

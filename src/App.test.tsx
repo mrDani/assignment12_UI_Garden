@@ -7,6 +7,6 @@ test('renders the navbar', () => {
   render(<App />);
 
   const navbarElements = screen.getAllByText(/Daniel/i);
-  
+
   expect(navbarElements[0]).toBeInTheDocument();
 });

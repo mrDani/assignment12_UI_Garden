@@ -1,9 +1,9 @@
-
 # Daniel Babalola Portfolio Site
 
 This is a React portfolio website showcasing my coursework and projects, built using my existing UI component library.
 
 ## 📚 Sections
+
 - Basic Information
 - Work
 - Skills
@@ -11,7 +11,9 @@ This is a React portfolio website showcasing my coursework and projects, built u
 - Developer Setup
 
 ## Getting Started
+
 1. Install dependencies:
+
 # UI Garden Component Library
 
 It is also a React Component Library built with Storybook. It includes the following components:
@@ -53,7 +55,7 @@ Each component is:
 
 Clone the repository and navigate into the project directory:
 
-````bash
+```bash
 git clone https://github.com/mrDani/assignment12_UI_Garden
 cd ui-garden
 
@@ -67,11 +69,11 @@ npm run test
 
 npm run storybook
 
-# To Run this Application for Docker: 
+# To Run this Application for Docker:
 
-npm start 
+npm start
 
-# To run storybook 
+# To run storybook
 npm run build-storybook
 
 docker build -t babalola_daniel_coding_assignment14 .
@@ -79,7 +81,7 @@ docker build -t babalola_daniel_coding_assignment14 .
 docker run -d -p 5575:80 --name babalola_daniel_coding_assignment14 babalola_daniel_coding_assignment14
 
 
-# Open your browser at: 
+# Open your browser at:
 
 http://localhost:5575
 
@@ -90,3 +92,4 @@ docker rm babalola_daniel_coding_assignment14
 
 docker rmi babalola_daniel_coding_assignment14
 
+```

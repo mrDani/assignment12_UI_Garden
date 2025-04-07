@@ -38,7 +38,9 @@ const Resources = () => (
       {resources.map((resource, index) => (
         <ResourceCard key={index}>
           <h3>{resource.title}</h3>
-          <a href={resource.link} target="_blank" rel="noopener noreferrer">Visit</a>
+          <a href={resource.link} target="_blank" rel="noopener noreferrer">
+            Visit
+          </a>
         </ResourceCard>
       ))}
     </ResourcesContainer>

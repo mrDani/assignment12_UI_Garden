@@ -24,10 +24,19 @@ const ToolCard = styled.div`
 `;
 
 const tools = [
-  { name: 'VSCode', description: 'My preferred code editor with various extensions.' },
-  { name: 'Terminal', description: 'Customized with themes and plugins for productivity.' },
+  {
+    name: 'VSCode',
+    description: 'My preferred code editor with various extensions.',
+  },
+  {
+    name: 'Terminal',
+    description: 'Customized with themes and plugins for productivity.',
+  },
   { name: 'Docker', description: 'Used for containerization and deployment.' },
-  { name: 'Git & GitHub', description: 'Version control and collaboration tools.' },
+  {
+    name: 'Git & GitHub',
+    description: 'Version control and collaboration tools.',
+  },
 ];
 
 const DeveloperSetup = () => (
